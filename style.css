@@ -42,6 +42,10 @@ ul li.checked {
   text-decoration: line-through;
 }
 
+ul li.checked:nth-child(odd) {
+  background: #623B39;
+}
+
 /* Add a "checked" mark when clicked on */
 ul li.checked::before {
   content: '';
@@ -69,7 +73,7 @@ ul li.checked::before {
   color: white;
 }
 
-/* Style the header */
+/* Style the header  Alex3103907 passw netlify*/
 .header {
   background-color: #9AB9B8;
   padding: 30px 40px;
@@ -94,11 +98,13 @@ img {
 /* Style the input */
 inputs {
 	position: relative;
+	
 }
 
 #myInput{
 	 width: 40%;
-	
+	 margin-right: 5px;
+	 border-radius: 3px;
 }
 
 input {
@@ -109,13 +115,15 @@ input {
   padding: 10px;
   float: left;
   font-size: 16px;
+  border-radius: 3px;
 }
 
 
 
 /* Style the "Add" button */
 .addBtn {
-  padding: 10px;
+  padding: 8px;
+  margin-left: 5px;
   width: 25%;
   background: #56908F;
   color: white;
@@ -124,7 +132,8 @@ input {
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
-  border-radius: 0;
+  border-radius: 3px;
+  font-size: 19px
 }
 
 .addBtn:hover {
